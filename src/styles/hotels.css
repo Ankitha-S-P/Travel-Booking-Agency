@@ -1,0 +1,20 @@
+.hotel-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+ 
+.hotel-card .text-warning {
+  color: #FFD700 !important; 
+}
+
+.hotel-card .d-flex.align-items-center span {
+  font-weight: 600;
+  color: #333;
+  margin-left: 3px;
+}

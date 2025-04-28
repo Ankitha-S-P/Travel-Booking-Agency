@@ -1,0 +1,89 @@
+.flight-booking-container {
+    max-width: 1200px;
+  }
+  
+  .flight-card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .flight-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .airline-logo {
+    margin-bottom: 5px;
+  }
+  
+  .airline-name {
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  
+  .flight-number {
+    font-size: 0.8rem;
+    color: #6c757d;
+  }
+  
+  .flight-time .time {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .flight-time .airport {
+    font-weight: bold;
+  }
+  
+  .flight-time .date {
+    font-size: 0.8rem;
+    color: #6c757d;
+  }
+  
+  .flight-duration {
+    color: #6c757d;
+  }
+  
+  .flight-route {
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .flight-route hr {
+    border-top: 2px dashed #dee2e6;
+    margin: 0;
+  }
+  
+  .flight-route .fa-plane {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #0d6efd;
+    background: white;
+    padding: 0 5px;
+  }
+  
+  .flight-price h4 {
+    color: #0d6efd;
+    margin-bottom: 0;
+  }
+  
+  .flight-details .badge {
+    font-weight: normal;
+  }
+  
+  .total-price {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .flight-time {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    
+    .flight-duration {
+      margin-bottom: 15px;
+    }
+  }

@@ -1,0 +1,98 @@
+/* Reset default margins and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.home-wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.video-background-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Video overlay */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-overlay h1 {
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
+}
+
+.video-overlay p {
+  color: #f8f9fa;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+/* Content container */
+.content-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Search box styling */
+.search-box {
+  margin-top: -25px; /* Pulls search box up slightly over the video */
+  position: relative;
+  z-index: 10;
+}
+
+.search-input {
+  border-radius: 50px;
+  padding: 15px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-overlay h1 {
+    font-size: 2rem;
+  }
+  
+  .video-overlay p {
+    font-size: 1.1rem;
+  }
+  
+  .video-background-container {
+    height: 60vh;
+  }
+}

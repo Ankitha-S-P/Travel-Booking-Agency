@@ -1,0 +1,82 @@
+/* Navbar container */
+.navbar {
+    padding: 15px 0;
+    background-color: black !important;
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Scrolled state */
+  .navbar.scrolled {
+    padding: 10px 0;
+    background-color: black!important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Brand styling */
+  .navbar-logo {
+    font-size: 1.8rem;
+  }
+  
+  .navbar-brand-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, yellow,orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* Nav links */
+  .nav-link-hover {
+    position: relative;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link-hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, yellow, orange);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .nav-link-hover:hover::after {
+    width: 70%;
+  }
+  
+  .nav-link-hover:hover {
+    color: orange !important;
+  }
+  
+  .signup-btn {
+    background: linear-gradient(135deg, yellow, orange);
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: black  !important; 
+  }
+  
+  .signup-btn:hover {
+    color: black;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(225, 205, 74, 0.3);
+  }
+  
+  .logout-btn {
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }

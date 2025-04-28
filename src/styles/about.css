@@ -1,0 +1,19 @@
+.about-container {
+    padding: 30px 0;
+  }
+  
+  .about-container h1 {
+    margin-bottom: 30px;
+  }
+  
+  .about-card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+  
+  .about-card .card-title {
+    color:darkorange;
+    margin-bottom: 15px;
+  }

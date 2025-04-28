@@ -1,0 +1,62 @@
+
+
+.package-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.package-image {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.package-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.package-details {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.package-rating-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.package-rating-price .badge {
+  background-color: #f8f9fa;
+  color: #fcfdfa;
+}
+
+.book-button {
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #ffe066, #ffa94d);
+  border: none;
+  color: #333;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+  color: #333 !important;
+}
+
+.book-button:hover {
+  background: linear-gradient(90deg, #ffd43b, #ff922b);
+  transform: translateY(-2px);
+}
